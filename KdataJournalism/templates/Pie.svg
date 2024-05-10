@@ -1,0 +1,22 @@
+<svg width="700" height="200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background rectangle -->
+    <rect x="100" y="100" width="500" height="50" fill="#e0e0e0" />
+
+    <!-- Electoral votes for Biden -->
+    <rect x="100" y="100" width="{{ 500 * state['Electoral Votes for Biden'] / state['Total Electoral Votes'] }}" height="50" fill="#0000FF" />
+
+    <!-- Electoral votes for Trump -->
+    <rect x="{{ 100 + 500 * state['Electoral Votes for Biden'] / state['Total Electoral Votes'] }}" y="100" width="{{ 500 * state['Electoral Votes for Trump'] / state['Total Electoral Votes'] }}" height="50" fill="#FF0000" />
+
+    <!-- Axes -->
+    <line x1="100" y1="150" x2="600" y2="150" style="stroke:#000;stroke-width:1" /> <!-- Horizontal line -->
+    <line x1="100" y1="100" x2="100" y2="155" style="stroke:#000;stroke-width:1" /> <!-- Vertical line at start -->
+    <line x1="600" y1="100" x2="600" y2="155" style="stroke:#000;stroke-width:1" /> <!-- Vertical line at end -->
+    <text x="350" y="170" text-anchor="middle" font-size="10">Electoral Votes Distribution</text>
+
+    <!-- Key for the chart -->
+    <rect x="620" y="100" width="20" height="20" fill="#0000FF" />
+    <text x="645" y="115" font-size="12" fill="#000">Biden</text>
+    <rect x="620" y="130" width="20" height="20" fill="#FF0000" />
+    <text x="645" y="145" font-size="12" fill="#000">Trump</text>
+</svg>
