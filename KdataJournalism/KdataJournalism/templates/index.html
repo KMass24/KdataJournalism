@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020 US Presidential Election Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Ensure no caching issues -->
+    <link rel="stylesheet" href="/style.css?v=1.1">
+    <style>
+        body { background-color: rgb(182, 248, 226) !important; }
+    </style>
+</head>
+<body>
+{% include 'navbar.html' %}
+{% include 'US.svg' %}
+
+<div style="margin-left:30px;width:1200px">
+<h3>Election Winner: Joseph R. Biden (D) - 306 Electoral Votes</h3>
+<p> 270 Votes Needed to Win, Donald J. Trump (R) - 232 Votes</p>
+<h3> ----- </h3>
+<h3>Analyzing the Election:</h3>
+<p>
+    The 2020 US Presidential Election offers a comprehensive look into the workings of the Electoral College and the significant role played by swing states. The nature of the Electoral College, a system where states are awarded a set number of electors based on their congressional representation, emphasizes the importance of key battleground states such as Pennsylvania, Michigan, and Wisconsin. These states, often decisive in the election outcome, can swing from one party to another between election cycles, as seen when they flipped in favor of the Democratic candidate, reversing their 2016 stance.
+<br><br>
+The pandemic had a profound impact on this election, altering campaigning strategies and voter turnout mechanisms. The widespread adoption of mail-in voting due to health concerns led to one of the highest voter turnouts in history, showcasing the adaptability of the electoral process under unprecedented circumstances. This change in voting methods also brought issues of voter access and election security to the forefront, influencing public opinion and voter behavior.
+</p>
+</div>
+<ol style="width:1200px">
+    <h3>Major Takeaways & Factors:</h3>
+    <li><strong>Urban vs. Rural:</strong> Both primary candidates in the 2020 election, Joseph R. Biden and Donald J. Trump, presented sharply contrasting policies and visions for America, yet reflected polarized voting patterns that were strongly influenced by socioeconomic factors. States with higher educational attainment and urban populations leaned towards Biden, while more rural areas with lower levels of college education favored Trump. Such a geographical difference is notable on the map above. </li>
+    
+    <li><strong>Swing States:</strong> States like Arizona and Georgia showed significant shifts towards the J. Biden (R), marking a notable change in their political alignment possibly due to changing demographics and voter mobilization efforts.</li>
+    
+    <li><strong>Voter Turnout:</strong> 2020 saw one of the highest voter turnouts in history, driven by strong opinions on the incumbent administration and increased accessibility to mail-in voting due to the pandemic.</li>
+</ol>
+
+{% include 'footer.html' %}
+</body>
+</html>
